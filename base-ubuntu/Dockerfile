@@ -7,3 +7,5 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted u
 RUN echo "deb http://archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list
 RUN echo "deb http://archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
 RUN apt-get -y update
+
+ONBUILD RUN apt-get -y update
